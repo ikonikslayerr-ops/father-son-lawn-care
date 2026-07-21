@@ -7,59 +7,81 @@
     <style>
         body {
             margin: 0;
-            font-family: Arial;
-            background: #e6ffe6;
-            text-align: center;
+            font-family: Arial, sans-serif;
+            background: #f5f5f5;
         }
 
         header {
-            background: green;
+            background: linear-gradient(rgba(0,100,0,0.7), rgba(0,100,0,0.7)),
+            url('https://images.unsplash.com/photo-1598514982841-5b1c84c3f276');
+            background-size: cover;
+            background-position: center;
             color: white;
-            padding: 30px 10px;
+            padding: 80px 20px;
+            text-align: center;
         }
 
-        h1 {
+        header h1 {
+            font-size: 50px;
             margin: 0;
-            font-size: 40px;
+        }
+
+        header p {
+            font-size: 20px;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 15px 30px;
+            background: #00c853;
+            color: white;
+            font-size: 20px;
+            border-radius: 8px;
+            text-decoration: none;
         }
 
         .section {
-            padding: 40px 20px;
+            padding: 50px 20px;
+            text-align: center;
         }
 
         .services {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            max-width: 800px;
+            margin: auto;
+        }
+
+        .card {
             background: white;
-            margin: 20px auto;
             padding: 20px;
-            max-width: 500px;
             border-radius: 10px;
-            box-shadow: 0 0 10px gray;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
         }
 
-        .phone-btn {
-            display: inline-block;
-            background: darkgreen;
-            color: white;
-            padding: 15px 25px;
-            font-size: 20px;
-            border-radius: 10px;
-            text-decoration: none;
-            margin-top: 20px;
-        }
-
-        .phone-btn:hover {
-            background: green;
-        }
-
-        .highlight {
-            font-size: 22px;
+        .card h3 {
             color: green;
-            font-weight: bold;
+        }
+
+        .reviews {
+            max-width: 700px;
+            margin: auto;
+        }
+
+        .review {
+            background: white;
+            padding: 20px;
+            margin: 15px 0;
+            border-left: 5px solid green;
+            text-align: left;
         }
 
         footer {
-            background: #222;
+            background: #111;
             color: white;
+            text-align: center;
             padding: 20px;
         }
     </style>
@@ -69,36 +91,66 @@
 
 <header>
     <h1>Father & Son Lawn Care</h1>
-    <p>Reliable • Affordable • Friendly</p>
+    <p>Professional • Reliable • Affordable</p>
+    <a class="btn" href="tel:8434372093">📞 Call Now: 843-437-2093</a>
 </header>
 
 <div class="section">
-    <h2>Full Lawn Care Services</h2>
+    <h2>Our Services</h2>
 
     <div class="services">
-        <p>✔ Mowing</p>
-        <p>✔ Edging</p>
-        <p>✔ Trimming</p>
-        <p>✔ Yard Cleanup</p>
+        <div class="card">
+            <h3>🌱 Lawn Mowing</h3>
+            <p>Clean, even cuts every time</p>
+        </div>
+
+        <div class="card">
+            <h3>✂️ Edging</h3>
+            <p>Sharp, professional edges</p>
+        </div>
+
+        <div class="card">
+            <h3>🌿 Trimming</h3>
+            <p>Neat and tidy finish</p>
+        </div>
+
+        <div class="card">
+            <h3>🧹 Yard Cleanup</h3>
+            <p>Leaves, debris, and more</p>
+        </div>
     </div>
-
-    <p class="highlight">Serving Your Local Area</p>
-
-    <a class="phone-btn" href="tel:8434372093">
-        📞 Call Now: 843-437-2093
-    </a>
 </div>
 
 <div class="section">
     <h2>Why Choose Us?</h2>
-    <p>✔ Fast & Reliable Service</p>
-    <p>✔ Affordable Prices</p>
     <p>✔ Family-Owned Business</p>
+    <p>✔ Fast & Reliable Service</p>
+    <p>✔ Affordable Pricing</p>
     <p>✔ Satisfaction Guaranteed</p>
 </div>
 
+<div class="section">
+    <h2>Customer Reviews</h2>
+
+    <div class="reviews">
+        <div class="review">
+            ⭐⭐⭐⭐⭐<br>
+            “Great work! My yard has never looked better.”
+        </div>
+
+        <div class="review">
+            ⭐⭐⭐⭐⭐<br>
+            “Fast, reliable, and affordable. Highly recommend!”
+        </div>
+    </div>
+</div>
+
+<div class="section">
+    <a class="btn" href="tel:8434372093">📞 Get Your Free Quote</a>
+</div>
+
 <footer>
-    <p>© 2026 Father & Son Lawn Care</p>
+    <p>© 2026 Father & Son Lawn Care | Call: 843-437-2093</p>
 </footer>
 
 </body>
