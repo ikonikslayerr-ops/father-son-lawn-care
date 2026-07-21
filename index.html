@@ -13,25 +13,16 @@ body {
     color: #333;
 }
 
-/* HERO */
 .hero {
     background: linear-gradient(rgba(0,80,0,0.7), rgba(0,80,0,0.7)),
     url('https://images.unsplash.com/photo-1598514982849-7b56f6b1c3a3');
     background-size: cover;
-    background-position: center;
     color: white;
     text-align: center;
     padding: 100px 20px;
 }
 
-.hero h1 {
-    font-size: 48px;
-    margin: 0;
-}
-
-.hero p {
-    font-size: 20px;
-}
+.hero h1 { font-size: 48px; }
 
 .btn {
     display: inline-block;
@@ -40,18 +31,16 @@ body {
     background: #28a745;
     color: white;
     text-decoration: none;
-    font-size: 18px;
     border-radius: 8px;
     font-weight: bold;
 }
 
-/* SECTION */
 .section {
     padding: 60px 20px;
     text-align: center;
 }
 
-.services, .pricing, .reviews {
+.grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: 20px;
@@ -66,33 +55,34 @@ body {
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
 
-.highlight {
-    background: #e9f7e9;
+.highlight { background: #e9f7e9; }
+
+input, textarea {
+    width: 90%;
+    padding: 10px;
+    margin: 10px;
 }
 
-/* FOOTER */
 .footer {
     background: #0b5e0b;
     color: white;
     text-align: center;
-    padding: 25px;
+    padding: 20px;
 }
 </style>
 </head>
 
 <body>
 
-<!-- HERO -->
 <div class="hero">
     <h1>Father & Son Lawn Care</h1>
     <p>Reliable • Affordable • Professional</p>
     <a href="tel:8434372093" class="btn">📞 Call Now: 843-437-2093</a>
 </div>
 
-<!-- SERVICES -->
 <div class="section">
     <h2>Our Services</h2>
-    <div class="services">
+    <div class="grid">
         <div class="card">🌱 Lawn Mowing</div>
         <div class="card">✂️ Edging</div>
         <div class="card">🌿 Trimming</div>
@@ -100,51 +90,60 @@ body {
     </div>
 </div>
 
-<!-- PRICING -->
 <div class="section highlight">
-    <h2>Simple Pricing</h2>
-    <div class="pricing">
-        <div class="card">
-            <h3>Basic</h3>
-            <p>$40+</p>
-            <p>Mowing</p>
-        </div>
-        <div class="card">
-            <h3>Standard</h3>
-            <p>$60+</p>
-            <p>Mowing + Edging</p>
-        </div>
-        <div class="card">
-            <h3>Full Service</h3>
-            <p>$80+</p>
-            <p>Everything Included</p>
-        </div>
+    <h2>Pricing</h2>
+    <div class="grid">
+        <div class="card"><h3>Basic</h3><p>$40+</p></div>
+        <div class="card"><h3>Standard</h3><p>$60+</p></div>
+        <div class="card"><h3>Full</h3><p>$80+</p></div>
     </div>
 </div>
 
-<!-- REVIEWS -->
 <div class="section">
+    <h2>Our Work</h2>
+    <div class="grid">
+        <div class="card">📸 Add before/after lawn photos here</div>
+        <div class="card">📸 Makes your business look legit</div>
+        <div class="card">📸 You can upload real jobs later</div>
+    </div>
+</div>
+
+<div class="section highlight">
     <h2>Customer Reviews</h2>
-    <div class="reviews">
-        <div class="card">⭐⭐⭐⭐⭐<br>“Great job, fast and professional!”</div>
-        <div class="card">⭐⭐⭐⭐⭐<br>“Best lawn service I’ve used.”</div>
-        <div class="card">⭐⭐⭐⭐⭐<br>“Highly recommend!”</div>
+    <div class="grid">
+        <div class="card">⭐⭐⭐⭐⭐ “Great job!”</div>
+        <div class="card">⭐⭐⭐⭐⭐ “Very professional!”</div>
+        <div class="card">⭐⭐⭐⭐⭐ “Highly recommend!”</div>
     </div>
 </div>
 
-<!-- AREA -->
-<div class="section highlight">
-    <h2>Serving Your Area</h2>
-    <p>Add your city here (example: Myrtle Beach, SC)</p>
-</div>
-
-<!-- CTA -->
 <div class="section">
-    <h2>Get a Free Quote Today</h2>
-    <a href="tel:8434372093" class="btn">Call Now</a>
+    <h2>Serving Area</h2>
+    <p><b>ADD YOUR CITY HERE</b> (example: Myrtle Beach, SC)</p>
 </div>
 
-<!-- FOOTER -->
+<div class="section highlight">
+    <h2>Get a Free Quote</h2>
+
+    <form>
+        <input type="text" placeholder="Your Name"><br>
+        <input type="text" placeholder="Phone Number"><br>
+        <textarea placeholder="What do you need?"></textarea><br>
+        <button class="btn">Submit</button>
+    </form>
+
+</div>
+
+<div class="section">
+    <h2>Find Us</h2>
+    <p><b>Proudly Serving Ladson, SC & Surrounding Areas</b></p>
+<p>Including Summerville, North Charleston, and Goose Creek</p>
+    <iframe 
+        src="https://maps.google.com/maps?q=myrtle%20beach&t=&z=13&ie=UTF8&iwloc=&output=embed"
+        width="90%" height="300" style="border:0;">
+    </iframe>
+</div>
+
 <div class="footer">
     <p>© 2026 Father & Son Lawn Care</p>
 </div>
