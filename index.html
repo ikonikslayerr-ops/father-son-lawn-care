@@ -8,22 +8,22 @@
         body {
             margin: 0;
             font-family: Arial, sans-serif;
-            background: #f5f5f5;
+            background: #f4f7f4;
         }
 
         header {
             background: linear-gradient(rgba(0,100,0,0.7), rgba(0,100,0,0.7)),
-            url('https://images.unsplash.com/photo-1598514982841-5b1c84c3f276');
+            url('https://images.unsplash.com/photo-1558904541-efa843a96f01');
             background-size: cover;
             background-position: center;
             color: white;
-            padding: 80px 20px;
             text-align: center;
+            padding: 90px 20px;
         }
 
         header h1 {
-            font-size: 50px;
-            margin: 0;
+            font-size: 48px;
+            margin-bottom: 10px;
         }
 
         header p {
@@ -48,17 +48,17 @@
 
         .services {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
             gap: 20px;
-            max-width: 800px;
+            max-width: 900px;
             margin: auto;
         }
 
         .card {
             background: white;
-            padding: 20px;
+            padding: 25px;
             border-radius: 10px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
         }
 
         .card h3 {
@@ -76,6 +76,12 @@
             margin: 15px 0;
             border-left: 5px solid green;
             text-align: left;
+        }
+
+        .cta {
+            background: green;
+            color: white;
+            padding: 40px 20px;
         }
 
         footer {
@@ -101,22 +107,22 @@
     <div class="services">
         <div class="card">
             <h3>🌱 Lawn Mowing</h3>
-            <p>Clean, even cuts every time</p>
+            <p>Clean, professional cuts every time.</p>
         </div>
 
         <div class="card">
             <h3>✂️ Edging</h3>
-            <p>Sharp, professional edges</p>
+            <p>Sharp edges for a clean look.</p>
         </div>
 
         <div class="card">
             <h3>🌿 Trimming</h3>
-            <p>Neat and tidy finish</p>
+            <p>Neat and detailed finishing.</p>
         </div>
 
         <div class="card">
             <h3>🧹 Yard Cleanup</h3>
-            <p>Leaves, debris, and more</p>
+            <p>Leaves, debris, and full cleanups.</p>
         </div>
     </div>
 </div>
@@ -135,22 +141,23 @@
     <div class="reviews">
         <div class="review">
             ⭐⭐⭐⭐⭐<br>
-            “Great work! My yard has never looked better.”
+            “Best lawn service I’ve used. Highly recommend!”
         </div>
 
         <div class="review">
             ⭐⭐⭐⭐⭐<br>
-            “Fast, reliable, and affordable. Highly recommend!”
+            “Quick, affordable, and professional work.”
         </div>
     </div>
 </div>
 
-<div class="section">
-    <a class="btn" href="tel:8434372093">📞 Get Your Free Quote</a>
+<div class="cta">
+    <h2>Get Your Lawn Looking Perfect Today</h2>
+    <a class="btn" href="tel:8434372093">📞 Call Now</a>
 </div>
 
 <footer>
-    <p>© 2026 Father & Son Lawn Care | Call: 843-437-2093</p>
+    <p>© 2026 Father & Son Lawn Care | 843-437-2093</p>
 </footer>
 
 </body>
