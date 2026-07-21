@@ -9,36 +9,34 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background: #f4f8f4;
+    background: #f5f7f5;
     color: #333;
 }
 
-/* HEADER */
-header {
-    background: linear-gradient(rgba(0,100,0,0.7), rgba(0,100,0,0.7)),
+/* HERO */
+.hero {
+    background: linear-gradient(rgba(0,80,0,0.7), rgba(0,80,0,0.7)),
     url('https://images.unsplash.com/photo-1598514982849-7b56f6b1c3a3');
     background-size: cover;
     background-position: center;
     color: white;
     text-align: center;
-    padding: 80px 20px;
+    padding: 100px 20px;
 }
 
-header h1 {
-    font-size: 42px;
+.hero h1 {
+    font-size: 48px;
     margin: 0;
 }
 
-header p {
-    font-size: 18px;
-    margin-top: 10px;
+.hero p {
+    font-size: 20px;
 }
 
-/* BUTTON */
 .btn {
     display: inline-block;
     margin-top: 20px;
-    padding: 15px 25px;
+    padding: 15px 30px;
     background: #28a745;
     color: white;
     text-decoration: none;
@@ -49,42 +47,49 @@ header p {
 
 /* SECTION */
 .section {
-    padding: 50px 20px;
+    padding: 60px 20px;
     text-align: center;
 }
 
-.services {
+.services, .pricing, .reviews {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: 20px;
-    max-width: 800px;
+    max-width: 1000px;
     margin: auto;
 }
 
 .card {
     background: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
 
+.highlight {
+    background: #e9f7e9;
+}
+
+/* FOOTER */
 .footer {
     background: #0b5e0b;
     color: white;
     text-align: center;
-    padding: 20px;
+    padding: 25px;
 }
 </style>
 </head>
 
 <body>
 
-<header>
+<!-- HERO -->
+<div class="hero">
     <h1>Father & Son Lawn Care</h1>
-    <p>Reliable • Affordable • Friendly</p>
+    <p>Reliable • Affordable • Professional</p>
     <a href="tel:8434372093" class="btn">📞 Call Now: 843-437-2093</a>
-</header>
+</div>
 
+<!-- SERVICES -->
 <div class="section">
     <h2>Our Services</h2>
     <div class="services">
@@ -95,20 +100,51 @@ header p {
     </div>
 </div>
 
-<div class="section" style="background:#e8f5e8;">
-    <h2>Why Choose Us?</h2>
-    <p>✔ Fast & Reliable Service</p>
-    <p>✔ Affordable Prices</p>
-    <p>✔ Family-Owned Business</p>
-    <p>✔ Satisfaction Guaranteed</p>
+<!-- PRICING -->
+<div class="section highlight">
+    <h2>Simple Pricing</h2>
+    <div class="pricing">
+        <div class="card">
+            <h3>Basic</h3>
+            <p>$40+</p>
+            <p>Mowing</p>
+        </div>
+        <div class="card">
+            <h3>Standard</h3>
+            <p>$60+</p>
+            <p>Mowing + Edging</p>
+        </div>
+        <div class="card">
+            <h3>Full Service</h3>
+            <p>$80+</p>
+            <p>Everything Included</p>
+        </div>
+    </div>
 </div>
 
+<!-- REVIEWS -->
 <div class="section">
-    <h2>Serving Your Local Area</h2>
-    <p>Call today for a free quote!</p>
-    <a href="tel:8434372093" class="btn">Get Your Free Quote</a>
+    <h2>Customer Reviews</h2>
+    <div class="reviews">
+        <div class="card">⭐⭐⭐⭐⭐<br>“Great job, fast and professional!”</div>
+        <div class="card">⭐⭐⭐⭐⭐<br>“Best lawn service I’ve used.”</div>
+        <div class="card">⭐⭐⭐⭐⭐<br>“Highly recommend!”</div>
+    </div>
 </div>
 
+<!-- AREA -->
+<div class="section highlight">
+    <h2>Serving Your Area</h2>
+    <p>Add your city here (example: Myrtle Beach, SC)</p>
+</div>
+
+<!-- CTA -->
+<div class="section">
+    <h2>Get a Free Quote Today</h2>
+    <a href="tel:8434372093" class="btn">Call Now</a>
+</div>
+
+<!-- FOOTER -->
 <div class="footer">
     <p>© 2026 Father & Son Lawn Care</p>
 </div>
